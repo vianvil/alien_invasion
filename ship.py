@@ -22,7 +22,7 @@ class Ship:
         #Ship settings
         self.settings = ai_game.settings
 
-        #Storing ship's horizontal position as a float
+        #Storing ship's horizontal position as a float since speed setting is a float, so we can work with
         self.x = float(self.rect.x)
 
     

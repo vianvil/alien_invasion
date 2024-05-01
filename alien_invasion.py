@@ -25,6 +25,7 @@ class AlienInvasion:
         while True:
             #Monitor keyboard and mouse events
             self._check_events()
+            #Updating the ship position
             self.ship.update()
             #Drawing the screen
             self._update_screen()

@@ -19,13 +19,22 @@ class Ship:
         self.moving_right = False
         self.moving_left = False
 
+        #Ship settings
+        self.settings = ai_game.settings
+
+        #Storing ship's horizontal position as a float
+        self.x = float(self.rect.x)
+
     
     def update(self):
         """Updating ship position based on movement flags"""
         if self.moving_right:
-            self.rect.x += 1
+            self.x += self.settings.ship_speed
         if self.moving_left:
-            self.rect.x -= 1
+            self.x -= self.settings.ship_speed
+
+        #Update rect object from self.x
+        self.rect.x = self.x
 
    
     def blitme(self):

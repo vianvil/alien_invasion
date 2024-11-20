@@ -22,3 +22,8 @@ class AlienInvasion:
 
             # ! Make the most recently drawn screen visible.
             pygame.display.flip()
+
+if __name__ == '__main__':
+    # Create an instance of the game and run it.
+    ai = AlienInvasion()
+    ai.run_game()

@@ -21,9 +21,12 @@ class AlienInvasion:
                 if event.type == pygame.QUIT:
                     sys.exit()
 
-            """ Make the most recently drawn screen visible.
-            End of while loop"""
+            """End of while loop"""
+            
+            # Redraws the screen for the next frame.
             pygame.display.flip()
+
+            # Sets the frame rate for clock.
             self.clock.tick(60)
 
 if __name__ == '__main__':

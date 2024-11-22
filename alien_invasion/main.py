@@ -13,6 +13,9 @@ class AlienInvasion:
         self.screen = pygame.display.set_mode((1200, 800))
         pygame.display.set_caption("Alien Invasion")
 
+        # Set the background color.
+        self.bg_color = (0, 0, 0)
+
     def run_game(self):
         """Starts the game loop."""
         while True:
@@ -23,7 +26,10 @@ class AlienInvasion:
 
             """End of while loop"""
             
-            # Redraws the screen for the next frame.
+            # Redraws the screen with the background color.
+            self.screen.fill(self.bg_color)
+
+            # Makes the most recently drawn screen visible.
             pygame.display.flip()
 
             # Sets the frame rate for clock.

@@ -7,6 +7,7 @@ class AlienInvasion:
     def __init__(self):
         """Initialize pygame to allow us to use it's tools."""
         pygame.init()
+        self.clock = pygame.time.Clock()
 
         """Creating the display window and setting dimensions and name."""
         self.screen = pygame.display.set_mode((1200, 800))
@@ -20,8 +21,10 @@ class AlienInvasion:
                 if event.type == pygame.QUIT:
                     sys.exit()
 
-            # ! Make the most recently drawn screen visible.
+            """ Make the most recently drawn screen visible.
+            End of while loop"""
             pygame.display.flip()
+            self.clock.tick(60)
 
 if __name__ == '__main__':
     # Create an instance of the game and run it.

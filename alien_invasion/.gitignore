@@ -1,0 +1,46 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs and debug files
+*.log
+
+# Virtual environment folders
+venv/
+env/
+
+# System files (macOS/Linux/Windows)
+.DS_Store
+*.swp
+*.swo
+Thumbs.db
+desktop.ini
+
+# IDE-specific files
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# Python package files
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.whl
+
+# Testing-related files
+.coverage
+.tox/
+.pytest_cache/
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Miscellaneous
+*.bak
+*.tmp

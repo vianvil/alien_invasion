@@ -12,7 +12,7 @@ class AlienInvasion:
         self.settings = Settings()
 
         """Creating the display window and setting dimensions and name."""
-        self.screen = pygame.display.set_mode(self.settings.screen_width, self.settings.screen_height)
+        self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invasion")
 
     def run_game(self):
